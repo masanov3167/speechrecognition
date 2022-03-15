@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+}
+
+.card{
+    width: 350px;
+    height: 100vh;
+    background: whitesmoke;
+
+    border-radius: 10px;
+}
+
+.card-header{
+    width: 350px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 2% 4%;
+    background: darkgrey;
+}
+.card-header-img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.card-header-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.card-body{
+    width: 100%;
+    height: 76vh;
+    padding: 2% 3%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card-body-chat{
+    border-radius: 12px;
+    padding: 0.5%;
+    background: #d6c4c4;
+    opacity: 0.6;
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.my-message{
+    width: 250px;
+    height: auto;
+    border-radius: 10px 5px 10px 0;
+    padding: 1% 2%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background: white;
+    display: flex;
+    margin-left: 24%;
+}
+.my-message::after{
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url(../img/verify.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 20%;
+}
+
+.friend-message{
+    width: 240px;
+    height: auto;
+    border-radius: 5px 10px 0 10px;
+    padding: 1% 2%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-footer{
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 4%;
+    background: darkgrey;
+}
+
+.card-footer-rec{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    content: "";
+    background: url(../img/microfone.png) no-repeat;
+    background-size: cover;
+}
+
+.card-footer-rec:hover{
+    opacity: 0.6;
+}
+
+
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
